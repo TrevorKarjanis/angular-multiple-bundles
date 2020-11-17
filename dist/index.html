@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Multiple Angular Elements</title>
+  <meta name="author" content="Trevor Karjanis">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    app-element, app-element-2 {
+      width: 416px;
+    }
+  </style>
+</head>
+<body class="mat-typography">
+  <app-element></app-element>
+  <app-element-2></app-element-2>
+
+  <script src="app-element/runtime.js" defer></script>
+  <script src="app-element/polyfills.js" defer></script>
+  <script src="app-element/styles.js" defer></script>
+  <script src="app-element/main.js" defer></script>
+  <script src="app-element-2/runtime.js" defer></script>
+  <script src="app-element-2/styles.js" defer></script>
+  <script src="app-element-2/main.js" defer></script>
+</body>
+</html>
