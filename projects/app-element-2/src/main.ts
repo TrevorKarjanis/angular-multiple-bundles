@@ -1,4 +1,5 @@
 import { enableProdMode } from '@angular/core';
+import { loadTranslations } from '@angular/localize';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
@@ -8,5 +9,10 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+fetch('app-element-2/assets/locales/es.json')
+  .then(response => response.ok && response.json())
+  .then(bundle => loadTranslations(bundle.translations))
+  .finally(() => {
+    platformBrowserDynamic().bootstrapModule(AppModule)
+      .catch(err => console.error(err));
+  });

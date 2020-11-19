@@ -1,0 +1,9 @@
+{
+  "locale": "en",
+  "translations": {
+    "6611310286937996080": "Custom Element Two",
+    "8370306245983482136": "Hello {$INTERPOLATION}!",
+    "783268276125471008": "What is your name?",
+    "3264452655068017433": "Enter your name"
+  }
+}
