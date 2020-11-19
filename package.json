@@ -7,6 +7,7 @@
     "app-element-2:build:prod": "ng build --prod app-element-2",
     "app-element-2:xi18n": "locl extract -s=\"dist/app-element-2/*.js\" -f=json -o=\"projects/app-element-2/src/assets/locales/en.json\"",
     "build": "npm run app-element:build:prod && npm run app-element-2:build:prod",
+    "lint": "ng lint",
     "ng": "ng",
     "start": "http-server ./dist",
     "xi18n": "npm run app-element:xi18n && npm run app-element-2:xi18n"
