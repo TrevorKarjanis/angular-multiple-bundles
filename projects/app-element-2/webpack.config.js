@@ -1,6 +1,6 @@
 module.exports = {
-    output: {
-        jsonpFunction: 'webpackJsonpAppElement2',
-        library: 'appelement2'
-    }
+  output: {
+    jsonpFunction: 'webpackJsonpAppElement2',
+    library: 'appelement2'
+  }
 }
