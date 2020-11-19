@@ -5,5 +5,9 @@ import { BehaviorSubject } from 'rxjs';
 // Demonstrate a simple service that could be injected into multiple components.
 @Injectable()
 export class AppService {
-  name$ = new BehaviorSubject<string>('Custom Element Two');
+  name$ = new BehaviorSubject<string>(null);
+
+  constructor() {
+    this.name$.next($localize`Custom Element Two`);
+  }
 }

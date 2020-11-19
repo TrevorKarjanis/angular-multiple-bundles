@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "app-element:build:prod": "ng build --prod app-element",
+    "app-element:xi18n": "locl extract -s=\"dist/app-element/*.js\" -f=json -o=\"projects/app-element/src/assets/locales/en.json\"",
     "app-element-2:build:prod": "ng build --prod app-element-2",
+    "app-element-2:xi18n": "locl extract -s=\"dist/app-element-2/*.js\" -f=json -o=\"projects/app-element-2/src/assets/locales/en.json\"",
     "build": "npm run app-element:build:prod && npm run app-element-2:build:prod",
     "ng": "ng",
-    "start": "http-server ./dist"
+    "start": "http-server ./dist",
+    "xi18n": "npm run app-element:xi18n && npm run app-element-2:xi18n"
   },
   "private": true,
   "dependencies": {
@@ -17,6 +20,7 @@
     "@angular/core": "~11.0.0",
     "@angular/elements": "^11.0.0",
     "@angular/forms": "~11.0.0",
+    "@angular/localize": "^11.0.1",
     "@angular/material": "^11.0.0",
     "@angular/platform-browser": "~11.0.0",
     "@angular/platform-browser-dynamic": "~11.0.0",
@@ -30,6 +34,7 @@
     "@angular-devkit/build-angular": "~0.1100.1",
     "@angular/cli": "~11.0.1",
     "@angular/compiler-cli": "~11.0.0",
+    "@locl/cli": "^1.0.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
