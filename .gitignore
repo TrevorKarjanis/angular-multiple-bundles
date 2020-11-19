@@ -4,6 +4,7 @@
 /dist/*
 !/dist/index.html
 !/dist/favicon.ico
+!/dist/styles.css
 /tmp
 /out-tsc
 # Only exists if Bazel was run

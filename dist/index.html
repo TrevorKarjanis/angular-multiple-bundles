@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <title>Multiple Angular Elements</title>
   <meta name="author" content="Trevor Karjanis">
+  <meta name="description" content="This project demonstrates running two distinct Angular elements in one page.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>
-    body {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    app-element, app-element-2 {
-      width: 416px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="mat-typography">
-  <app-element></app-element>
-  <app-element-2></app-element-2>
+  <p class="description">
+    This project demonstrates running two distinct <a href="https://angular.io/guide/elements">Angular elements</a> in
+    one page using <a href="https://www.npmjs.com/package/@angular-builders/custom-webpack">@angular-builders/custom-webpack</a>.
+    Checkout the <a href="https://github.com/TrevorKarjanis/angular-multiple-elements#readme">repository</a> for more information.
+  </p>
+  <div class="elements">
+    <app-element></app-element>
+    <app-element-2></app-element-2>
+  </div>
+  <div class="fill"></div>
+  <p class="created-by">Created by Trevor Karjanis</p>
 
   <script src="app-element/runtime.js" defer></script>
   <script src="app-element/polyfills.js" defer></script>
