@@ -1,0 +1,9 @@
+{
+  "locale": "es",
+  "translations": {
+    "6611310286937996080": "Custom Element Dos",
+    "8370306245983482136": "Hola {$INTERPOLATION}!",
+    "783268276125471008": "Cuál es tu nombre?",
+    "3264452655068017433": "Introduzca su nombre"
+  }
+}
