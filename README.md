@@ -4,7 +4,7 @@ This project demonstrates running two distinct, localized [Angular element](http
 
 ## Demo
 
-A live demo is available at [https://trevorkarjanis.github.io/angular-multiple-elements](https://trevorkarjanis.github.io/angular-multiple-elements).
+A live demo is available at [https://trevorkarjanis.github.io/angular-multiple-elements](https://trevorkarjanis.github.io/angular-multiple-bundles).
 
 ## Build
 
@@ -43,7 +43,7 @@ npm install --save-dev @angular-builders/custom-webpack
 
 3. Create a custom webpack configuration file, webpack.config.js, in each project directory.
 
-4. In each custom webpack configuration, define unique values for the jsonpFunction and library output configuration options ([example](https://github.com/TrevorKarjanis/angular-multiple-elements/blob/238a1bfe40665be0c5988bc90015ad9a08da2ba2/angular.json#L17)).
+4. In each custom webpack configuration, define unique values for the jsonpFunction and library output configuration options ([example](https://github.com/TrevorKarjanis/angular-multiple-bundles/blob/238a1bfe40665be0c5988bc90015ad9a08da2ba2/angular.json#L17)).
 
 ```javascript
 module.exports = {
@@ -56,7 +56,7 @@ module.exports = {
 
 5. Build the project.
 
-6. Include each project's runtime, styles, and main bundles in the correct order in the target page. Include the polyfills bundle only once ([example](https://github.com/TrevorKarjanis/angular-multiple-elements/blob/f314993dde3bfa916e611ef9cce1ecf355295330/index.html#L25)).
+6. Include each project's runtime, styles, and main bundles in the correct order in the target page. Include the polyfills bundle only once ([example](https://github.com/TrevorKarjanis/angular-multiple-bundles/blob/f314993dde3bfa916e611ef9cce1ecf355295330/index.html#L25)).
 
 ```html
 <script src="app-element/runtime.js" defer></script>
