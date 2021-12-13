@@ -4,7 +4,7 @@ This project demonstrates running two distinct, localized [Angular element](http
 
 ## Demo
 
-A live demo is available at [https://trevorkarjanis.github.io/angular-multiple-elements](https://trevorkarjanis.github.io/angular-multiple-bundles).
+A live demo is available at [https://trevorkarjanis.github.io/angular-multiple-bundles](https://trevorkarjanis.github.io/angular-multiple-bundles).
 
 ## Build
 
