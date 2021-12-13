@@ -1,6 +1,6 @@
 module.exports = {
   output: {
-    jsonpFunction: 'webpackJsonpAppElement',
+    chunkLoadingGlobal: 'webpackJsonpAppElement',
     library: 'appelement'
   }
-}
+};
